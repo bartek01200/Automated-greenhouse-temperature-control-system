@@ -1,1 +1,3 @@
+Firmware:
 
+The control firmware was written in C++ using the arduino framework and integrates the sensor, user controls, display,alarms and window actuator
