@@ -17,9 +17,9 @@ Main mechanical components:
 - Hinged ventilation roof/window
 - SG90 servo mounting arrangement
 - Push rod
-- Push rod connector
+- roof mount
+- push rod connector
 - Servo rotator/linkage
-- PCB support pins
 - PCB  standoff mounts 4x on each corner to help with cooling and preventing shorting
 - Sensor mounting provision
 - OLED mounting provision
