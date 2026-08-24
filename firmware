@@ -14,5 +14,22 @@ Firmware performs:
 - Activates a buzzer and blinking LED during an over temperature condition 
 - Outputs sensor meassurements over 9600 baud serial interface for debugging or testing
 
-Control logic;
+Control logic:
+
+
+
+
+
+
+contol priority:
+(emergency)
+S1 pressed = forces window OPEN
+S2 pressed = forces window CLOSED
+no buttons = automatic temperature control
+
+temp above threshold = open vent(window)
+temp below threshold = close vent
+
+The firmware tracks the current ventilation so the servo only activates when a change in window postion is needed.Servo power is supplied through the relay during movement and diconnected 
+once the required servo position is met.
 
