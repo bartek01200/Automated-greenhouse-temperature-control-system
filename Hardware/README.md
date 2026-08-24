@@ -6,39 +6,39 @@ The PCB was designed, assembled and soldered as a part of the project before bei
 
 ### Hardware features
 
--MCU mating headers for connection to the controller board
+- MCU mating headers for connection to the controller board
 
--BMP180 temperature and atmospheric pressure sensor interface
+- BMP180 temperature and atmospheric pressure sensor interface
 
--SSD1306 OLED display interface over I²C
+- SSD1306 OLED display interface over I²C
 
--Analogue potentiometer input for adjustable temperature threshold control
+- nalogue potentiometer input for adjustable temperature threshold control
 
--Two push-button inputs for manual open and close override
+- Two push-button inputs for manual open and close override
 
--SG90 servo interface for ventilation control
+- SG90 servo interface for ventilation control
 
--Relay-controlled servo power switching
+- Relay controlled servo power switching
 
--2N4401 NPN transistor relay driver
+- 2N4401 NPN transistor relay driver
 
--1N4004 flyback diode for inductive transient protection
+- 1N4004 flyback diode for inductive transient protection
 
--LED status indicators
+- LED status indicators
 
--Audible buzzer output
+- Audible buzzer output
 
--Local power-supply decoupling capacitors
+- Local power-supply decoupling capacitors
 
--External relay output connection
+- External relay output connection
 
--PCB mounting holes for mechanical integration
+- PCB mounting holes for mechanical integration
 
 ### Relay Driver Circuit:
 
 The relay is driven using a 2N4401 NPN transistor rather than directly from the MCU output.
 
-The MCU controls the transistor through a base resistor, allowing the transistor to switch the higher relay-coil current.
+The MCU controls the transistor through a base resistor, allowing the transistor to switch the higher relay coil current.
 
 A 1N4004 flyback diode is connected across the relay coil to suppress the inductive voltage spike generated when the relay is switched off.
 
@@ -53,7 +53,7 @@ Its wiper is connected to the MCU's analogue input A0, allowing the firmware to 
 The resulting ADC value is mapped in firmware to an adjustable temperature threshold between:
 20°C and 35°C
 
-This provides real-time hardware adjustment of the ventilation temperature without requiring firmware modification.
+This provides real time hardware adjustment of the ventilation temperature without requiring firmware modification.
 
 ### PCB Layout:
 The PCB layout integrates the MCU connectors and supporting circuitry onto a single board while providing connections for the sensor, display, servo and user controls.
@@ -71,13 +71,13 @@ Following assembly, continuity and component connections were checked before the
 
 - SSD1306 OLED - Real time system information display
 
-- Potentiometer - User-adjustable temperature threshold
+- Potentiometer - User adjustable temperature threshold
 
 - SG90 Servo - Greenhouse window actuation
 
 - Relay - Servo power switching
 
-- 2N4401- Relay-driver transistor
+- 2N4401- Relay driver transistor
 
 - 1N4004- Relay flyback protection
 
