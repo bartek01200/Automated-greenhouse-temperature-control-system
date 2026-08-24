@@ -1,8 +1,5 @@
 # Automated-greenhouse-temperature-control-system
 
-Custom PCB and firmware for automated greenhouse window control: monitors temperature, compares it against a user adjustable threshold, and drives a servo to open/close the window automatically
+An embedded temperature control system that automatically regulates greenhouse ventilation using a BMP180 enviromental sensor,custom PCB and servo actuated window mechanism.
 
-IMAGE
-
-How it works:
-A BMP180 sensor continously monitors ambient temperature and displayes the reading on on oled siplay th
+The system monitors temperature and atmospheric pressure in real time and allows the user to set an adjustable 20 - 35C temperaturer threshold using an onboard potentiometer.When the measured temperature exceeds the selected threshold, the controller automatically opens the ventilation window and provides visualand audible status feedback using a buzzer.
