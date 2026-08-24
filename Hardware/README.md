@@ -34,6 +34,46 @@ The PCB was designed, assembled and soldered as a part of the project before bei
 
 - PCB mounting holes for mechanical integration
 
+## Controller Platform
+The system interfaces with a supplied **TSC033 ATmega-based controller board**, which provides the MCU, power regulation, programming interface and I/O connections used by the custom PCB.
+
+The controller board was physically assembled and soldered as part of the project before integration with the custom top-board PCB.
+
+Available MCU interfaces used by the system include:
+
+- A0 –Potentiometer input for adjustable temperature threshold.
+- A4 / SDA –I²C data connection.
+- A5 / SCL –I²C clock connection.
+  *Digital inputs -Manual control switches.
+- Digital outputs –Status indicators, buzzer, relay and servo control.
+- 5 V and GND rails –Power distribution to the custom PCB and peripherals.
+
+The custom PCB was designed to mate with the controller board through the supplied board-to-board connector arrangement.
+
+## Provided and Custom Hardware
+Several components were supplied as part of the project platform, including:
+
+- ATmega-based controller board
+- I/O daughter board
+- SG90 micro servo
+- Greenhouse structural frame
+- Push rod and associated hardware
+
+These components were integrated with the electronics and mechanical system developed for the project.
+
+My hardware work included:
+
+- Designing the custom mating PCB.
+- Designing the supporting sensor, actuator and user-interface circuitry.
+- Implementing the relay driver and flyback protection circuit.
+- Adding power-supply decoupling.
+- Integrating the BMP180 and OLED through I²C.
+- Integrating the potentiometer through the MCU ADC.
+- Providing interfaces for the servo, buzzer, LEDs and manual controls.
+- PCB assembly and soldering.
+- System wiring, commissioning and debugging
+
+
 ### Relay Driver Circuit:
 
 The relay is driven using a 2N4401 NPN transistor rather than directly from the MCU output.
