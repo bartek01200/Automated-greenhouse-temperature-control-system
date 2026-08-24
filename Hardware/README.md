@@ -37,7 +37,7 @@ The PCB was designed, assembled and soldered as a part of the project before bei
 ## Controller Platform
 The system interfaces with a supplied **TSC033 ATmega-based controller board**, which provides the MCU, power regulation, programming interface and I/O connections used by the custom PCB.
 
-The controller board was physically assembled and soldered as part of the project before integration with the custom top-board PCB.
+The controller board was physically assembled and soldered by me as part of the project before integration with the custom top-board PCB.
 
 Available MCU interfaces used by the system include:
 
