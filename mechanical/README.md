@@ -26,6 +26,9 @@ Main mechanical components:
 
 The assembly was designed to support and integrate the custom PCB, MCU daughter board, BMP180 sensor, OLED display and SG90 servo motor.
 
+**DISCLAIMER**
+Intial design was to have PCB on the back and MCU however whilst assembling together i realised its better to have the pcb on top of the MCU as they need to connect thus i did not want to have cables all over the inisde of greenhouse.So i connected both PCB ontop of each other 
+
 ## Window Mechanism:
 The ventilation window is actuated using an SG90 micro servo mounted to the side of the greenhouse structure.
 
