@@ -16,6 +16,10 @@ Activates a buzzer and blinking LED during an over temperature condition
 Outputs sensor meassurements over 9600 baud serial interface for debugging or testing
 Control logic: Automated Greenhouse Temperature Control System
 
+![Greenhouse Control Logic Flowchart](../images/control-logic-flowchart.png)
+
+
+
 contol priority: (emergency) S1 pressed = forces window OPEN S2 pressed = forces window CLOSED no buttons = automatic temperature control
 
 temp above threshold = open vent(window) temp below threshold = close vent
