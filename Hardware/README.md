@@ -55,6 +55,11 @@ The resulting ADC value is mapped in firmware to an adjustable temperature thres
 
 This provides real-time hardware adjustment of the ventilation temperature without requiring firmware modification.
 
+### PCB Layout:
+The PCB layout integrates the MCU connectors and supporting circuitry onto a single board while providing connections for the sensor, display, servo and user controls.
+
+During layout, component placement was arranged around the required MCU mating headers and mechanical constraints of the greenhouse assembly.
+
 ### PCB Assembly:
 The PCB was manually assembled and soldered before system commissioning.
 
@@ -62,9 +67,9 @@ Following assembly, continuity and component connections were checked before the
 
 ### Main Components:
 
--BMP180 - Temperature and atmospheric pressure sensing
+- BMP180 - Temperature and atmospheric pressure sensing
 
--SSD1306 OLED - Real time system information display
+- SSD1306 OLED - Real time system information display
 
 - Potentiometer - User-adjustable temperature threshold
 
