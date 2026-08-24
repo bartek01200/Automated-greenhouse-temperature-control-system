@@ -1,0 +1,20 @@
+Qty,Value,Device,Package,Parts,Description,MF,MPN,OC_FARNELL,OC_NEWARK,POPULARITY,PROD_ID,SF_ID,SF_SKU,SKU,VALUE
+2,0.1uF,C2.5/2,C2.5-2,"C2, C3",CAPACITOR,,,,,1,,,,,
+1,100uF,RCL_CPOL-EUE3.5-8,"ELECTROLYTIC_CAP_RCL_E3,5-8",C1,"POLARIZED CAPACITOR, European symbol",,,,,,,,,,
+1,10K,TRIM_EU-RS3,RS3,R7,POTENTIOMETER,,,,,0,,,,,
+3,10k,R-EU_0207/10,0207/10,"R2, R4, R5","RESISTOR, European symbol",,,,,,,,,,
+1,10uF,CPOL-USE3.5-8,"E3,5-8",C4,"POLARIZED CAPACITOR, American symbol",,,,,,,,,,
+1,1N4004,1N4004,DO41-10,D1,DIODE,,,,,82,,,,,
+2,1X04_SMD_STRAIGHT_COMBO,CONN_04LONGPADS,1X04_LONGPADS,"BMP180, OLED","Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections",,,,,,CONN-08511,PRT-12638,,,1X04_SMD_STRAIGHT_COMBO
+1,1k,R-EU_0207/10,0207/10,R6,"RESISTOR, European symbol",,,,,,,,,,
+1,"",CONN_03LONGPADS,1X03_LONGPADS,SERVO,"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections",,,,,,CONN-10925,PRT-08235,PRT-08433,,""
+2,220R,R-EU_0207/10,0207/10,"R1, R3","RESISTOR, European symbol",,,,,,,,,,
+1,2N4401,-NPN-TO92-EBC,TO92-EBC,T1,"NPN Transistror",,,,,0,,,,,
+2,"Connector MCU",CONN_15,1X15,"J1, J2","Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections",,,,,,,,,,
+1,EL311_ATMEGA_INTRO_TSC033_V1_BUZZER_F/CM12P,EL311_ATMEGA_INTRO_TSC033_V1_BUZZER_F/CM12P,EL311_ATMEGA_INTRO_TSC033_V1_BUZZER_F/CM12P,BUZZER,"BUZZER Source: Buerklin",,,unknown,unknown,9,,,,,
+1,GREEN,LED3MM,LED3MM,LED3,LED,,,,,,,,,,
+1,RED,ADAFRUIT_LED3MM,ADAFRUIT_LED3MM,LED1,LED,,,,,,,,,,
+1,RELAY_G5V1,RELAY_G5V1,RELAY_G5V1,K1,RELAY,,G5V-1-DC24,9949593,36M6377,0,,,,,
+1,RELAY_OUT,SPARKFUN-CONNECTORS_CONN_02,SPARKFUN-CONNECTORS_1X02,J7,"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections",,,,,,CONN-13512,PRT-09918,PRT-08432,PRT-09914,
+2,STANDOFF_ELECTRICAL,STANDOFF_ELECTRICAL,STANDOFF-ELECTRICAL,"H1, H2","Stand Off",,,,,,,,,,
+1,Switch,EL311-ROBOT_SPARKFUN-ELECTROMECHANICAL_TAC_SWITCHPTH,EL311-ROBOT_SPARKFUN-ELECTROMECHANICAL_TACTILE-PTH,S2,"Momentary Switch",,,,,,,,,,
