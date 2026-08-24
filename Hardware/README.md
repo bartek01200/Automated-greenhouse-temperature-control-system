@@ -1,8 +1,8 @@
 ## Hardware 
 
-The harware system uses a custom PCB designed to interface the MCU with the environmental sensor,OLED display, user controls, alarm indicators and servo controlled ventilation mechanism.
+assembled and soldered the controller board, programmed the MCU in C++ using the Arduino framework through the supplied USB programming adapter/interface PCB, and integrated the controller with my custom mating PCB and peripheral hardware.
 
-The PCB was designed, assembled and soldered as a part of the project before being intergrated with the firmware and the mechanical system.
+The custom top-board PCB, including the sensor interfaces, potentiometer input, relay driver, protection circuitry, servo interface and status outputs, was designed, assembled and soldered by me. before being intergrated with the firmware and the mechanical system.
 
 ### Hardware features
 
