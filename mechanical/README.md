@@ -20,7 +20,7 @@ Main mechanical components:
 - Push rod connector
 - Servo rotator/linkage
 - PCB support pins
-- PCB mounting structure
+- PCB  standoff mounts 4x on each corner to help with cooling and preventing shorting
 - Sensor mounting provision
 - OLED mounting provision
 
