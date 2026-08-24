@@ -1,8 +1,8 @@
-Firmware:
+## Firmware:
 
 The control firmware was written in C++ using the arduino framework and integrates the sensor, user controls, display,alarms and window actuator
 
-Firmware performs:
+### Firmware performs:
 
 Reads temperature and atmospheric pressure from the BMP180 sensor over I²C
 Samples the onboard potentiometer using the MCU's ADC
@@ -14,7 +14,9 @@ Provides manual open/close through 2 buttons
 Displays temperature,pressure,threshold and system staus on a 128x64 SSD1306 OLED
 Activates a buzzer and blinking LED during an over temperature condition
 Outputs sensor meassurements over 9600 baud serial interface for debugging or testing
-Control logic: Automated Greenhouse Temperature Control System
+
+
+### Control logic: Automated Greenhouse Temperature Control System
 
 ![Greenhouse Control Logic Flowchart](../images/control-logic-flowchart.png)
 
