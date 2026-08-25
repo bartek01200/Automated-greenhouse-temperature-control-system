@@ -21,7 +21,6 @@ const int SERVO_PIN  = 11;
 const int BUZZER_PIN = 12;
 const int RELAY_PIN  = 13;
 const int LED_PIN= 8;
-
 //Servo positions
 const int SERVO_CLOSED_ANGLE = 150;// 5 o'clock position (Closed position)
 const int SERVO_OPEN_ANGLE = 90;
@@ -36,9 +35,7 @@ float pressure = 0.0;
 
 bool ventOpen = false;//track state of the ventilation window
 bool ledState = false;
-
 unsigned long lastBlinkMillis = 0;
-
 
 void setup() {
   Serial.begin(9600);//open serial communications at 9600 baud
@@ -69,13 +66,10 @@ void setup() {
 
   //Initialise servo in closed position
   ventServo.attach(SERVO_PIN);//attach the servo object to its control pin
-
   digitalWrite(RELAY_PIN,HIGH);//Engage relay to give servo temporary setup power
   delay(100);
-
   ventServo.write(SERVO_CLOSED_ANGLE);
   delay(600);
-
   digitalWrite(RELAY_PIN,LOW);
 }
 
@@ -84,12 +78,9 @@ void openVent() {
   if (!ventOpen) {
     digitalWrite(RELAY_PIN,HIGH);
     delay(100);
-
     ventServo.write(SERVO_OPEN_ANGLE);
     delay(600);
-
     digitalWrite(RELAY_PIN,LOW);
-
     ventOpen = true;
   }
 }
@@ -99,12 +90,9 @@ void closeVent() {
   if (ventOpen) {
     digitalWrite(RELAY_PIN,HIGH);
     delay(100);// lets the voltage increase
-
     ventServo.write(SERVO_CLOSED_ANGLE);
     delay(600);
-
     digitalWrite(RELAY_PIN,LOW);//turns off power to relay to be more efficent
-
     ventOpen = false;
   }
 }
@@ -114,14 +102,12 @@ void loop() {
 
   currentTemp = bmp.readTemperature();//fetch temperature data from BMP180
   pressure = bmp.readPressure()/100.0F;//fetches  pressure and convert to hPa
-
   //Read user adjustable temperature threshold
   int potValue = analogRead(POT_PIN);
   threshold = map(potValue, 0, 1023, 20, 35);
 
   bool manualOpen  = digitalRead(SWITCH_S1) ==LOW;
   bool manualClose = digitalRead(SWITCH_S2) == LOW;
-
   bool overTemperature = currentTemp > threshold;
 
 
@@ -131,7 +117,6 @@ void loop() {
   else if (manualClose) {
     closeVent();
   }
-
   else if (!ventOpen && currentTemp>threshold + HYSTERESIS) {//checks if the ventilation window is currently closed
     openVent();
   }
@@ -140,21 +125,17 @@ void loop() {
   }
 
   if (overTemperature) {
-
     digitalWrite(BUZZER_PIN,HIGH);
-
     unsigned long currentMillis = millis();
 
     if (currentMillis -lastBlinkMillis>= BLINK_INTERVAL) {
       lastBlinkMillis =currentMillis;
-
       ledState = !ledState;
       digitalWrite(LED_PIN,ledState);
     }
   }
   else {
     digitalWrite(BUZZER_PIN,LOW);
-
     ledState = false;
     digitalWrite(LED_PIN,LOW);
   }
@@ -162,7 +143,6 @@ void loop() {
 
   Serial.print("Temp:");//displays temp
   Serial.println(currentTemp);
-
   Serial.print("Pressure:");
   Serial.println(pressure);
 
@@ -173,25 +153,22 @@ void loop() {
   display.clearDisplay();//clears oled
   display.setTextSize(1);
   display.setTextColor(WHITE);
-  
   display.setCursor(0, 0);
   display.print("Temp:");
   display.print(currentTemp);
   display.println(" C");
-
   display.print("Pressure:");
   display.print(pressure);
   display.println(" hPa");
-
   display.print("Threshold:");
   display.print(threshold);
   display.println(" C");
-
   display.print("Window: ");
   display.println(ventOpen? "OPEN":"CLOSED");
-
   display.print("Status:");
   display.println(overTemperature? "ALARM":"NORMAL");
   display.display();
   delay(200);
+}
+                                   
 }
