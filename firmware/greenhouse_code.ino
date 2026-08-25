@@ -16,15 +16,15 @@ Servo ventServo; //create a servo object to control the opening of it
 //pin assignments
 const int SWITCH_S1  = 4;//switch S1 mapped to digital Pin 4
 const int SWITCH_S2  = 2;
-const int POT_PIN    = A0;
+const int POT_PIN = A0;
 const int SERVO_PIN  = 11;
 const int BUZZER_PIN = 12;
 const int RELAY_PIN  = 13;
-const int LED_PIN    = 8;
+const int LED_PIN= 8;
 
 //Servo positions
 const int SERVO_CLOSED_ANGLE = 150;// 5 o'clock position (Closed position)
-const int SERVO_OPEN_ANGLE   = 90;
+const int SERVO_OPEN_ANGLE = 90;
 
 //Control parameters
 const float HYSTERESIS = 0.5;
@@ -188,10 +188,10 @@ void loop() {
   display.println(" C");
 
   display.print("Window: ");
-  display.println(ventOpen ? "OPEN":"CLOSED");
+  display.println(ventOpen? "OPEN":"CLOSED");
 
   display.print("Status:");
-  display.println(overTemperature ? "ALARM":"NORMAL");
+  display.println(overTemperature? "ALARM":"NORMAL");
   display.display();
   delay(200);
 }
