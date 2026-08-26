@@ -12,5 +12,5 @@ The system continuously monitors temperature and atmospheric pressure while allo
 ### Side View
 ![Side View](images/side_project.png)
 
-###CAD Front view
+## CAD Front view
 ![Front View](images/front.png)
